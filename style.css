@@ -3,20 +3,22 @@
     margin: 0%;
 }
 
-/*@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap');
-
-
-@font-face {
-    font-family:'Fraunces' ;
-    src: url('font/Fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf') format('truetype') ;
-}
 @font-face {
     font-family: 'Barlow';
-    src: url('font/Barlow/') format('truetype');
+    src: url('fonts/Barlow/Barlow-Light.ttf') format('truetype');
 }
-*/
+
+/*FRAUCES*/
+@font-face {
+    font-family: 'Frauces' ;
+    src: url('fonts/Fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf') 
+    format('truetype');
+}
+
+
+
+
+
 
 /*HEADER*/
 header{
@@ -24,6 +26,8 @@ header{
     flex-direction: row;
     background-color:hsl(200, 100%, 62%) ;
     justify-content: space-between;
+    font-family: 'Frauces' ;
+  
 }
 #logo-img{
     padding: 1rem;
@@ -33,35 +37,53 @@ ul{
     flex-direction: row;
     padding: 1rem;
     
+    
+    
 }
-li a {
+.menu-list a {
     margin-left: 1rem;
     color: white;
     text-decoration: none;
+    
 }
- #btn-ctn{
-    background-color: white;
-    color: black;
-    padding: 0.5rem;
-    border-radius: 1rem;
-    font-family: 'Barlow';
+.menu-list li a:hover {
+    margin-left: 1rem;
+    color: white;
+    border-bottom: hsl(197, 64%, 2%);
+}
 
+ #ctc{
+    background-color: white;
+    color: hsl(200, 100%, 62%);
+    padding: 0.4rem;
+    border-radius: 1rem;
+    font-family: 'Frauces';
+    
+}
+#ctc:hover{
+    transition-duration: 1s;
+    background-color: yellow;
+    color: rgb(124, 124, 100);
 }
 
 .main-area{
     background: url(images/desktop/image-header.jpg) no-repeat center center/cover;
     height: 60vh;
+   
+ 
 }
 #txt-main{
     color: white;
-   text-align: center;
+    text-align: center;
     position: relative;
     top: 2rem;
     z-index: 2;
     font-size: 4rem;
-    
+    font-family: 'Frauces' ;
+    font-weight: 700;
+   
+   
 }
-
 
 
 
@@ -71,6 +93,9 @@ li a {
     flex-direction: row;
     margin:  auto;
 }
+.box img{
+    width: 44.5rem;
+}
 .txt-box{
     padding: 2rem;
     display: flex;
@@ -79,60 +104,169 @@ li a {
     width: 50%;
     padding-left: 5rem;
 }
+
+
+.box-1 a {
+    color: rgba(0, 0, 0, 0.557);
+    border-bottom: 0.2rem solid yellow;
+    width: 7rem;
+    text-decoration: none;
+    font-family: 'Frauces' ;
+    transition-duration: 0.5s;
+   
+}
+ .box-1 a:hover {
+    background-color: yellow;
+    border-radius: 1rem;
+    padding: 0.3rem;
+    width: 7rem;
+    color: rgb(194, 194, 71);
+    box-shadow: 1rem 0.7rem 2rem rgba(0, 0, 0, 0.178);
+  
+  
+}
+
+ .box-2 a {
+    transition-duration: 1ms;
+    color: rgba(0, 0, 0, 0.353);
+    border-bottom: 0.2rem solid hsl(7, 99%, 70%);
+    width: 7rem;
+    text-decoration: none;
+    font-family: 'Frauces' ;
+    transition-duration: 0.5s;
+    
+}
+.box-2 a:hover {
+    color: rgba(0, 0, 0, 0.537);
+    background-color: hsl(7, 99%, 70%);
+    border-radius: 1rem;
+    padding: 0.3rem;
+    width: 7rem;
+    color: hsl(7, 64%, 47%);
+    box-shadow: 1rem 0.7rem 2rem rgba(0, 0, 0, 0.402);
+  
+}
+
+
 .txt-h1{
     font-size: 3rem;
     width: 25rem;  
     margin-bottom: 1rem;
+    font-family: 'Frauces' ;
+    font-weight: 700;
 }
 .txt-p{
     font-size: 1.4rem;
     width: 25rem;  
     margin-bottom: 1rem;
+    font-family: 'Barlow';
 }
+
+/*images area*/
 
 .box-pic{
     display: flex;
     flex-direction: row;
-    width: 50%;
-    height: 70%;
 }
+.box-pic img{
+    width: 44.4rem;
 
-.img-txt-box{
-    background: url(images/desktop/image-graphic-design.jpg) no-repeat center center/cover;
+}
+#sttr-pic1{
+    background-color: hsl(169, 45%, 70%);
+    color: hsl(169, 48%, 37%);
+    text-align: center;
+    z-index: 2;
    
 }
-.img-txt-box-2{
-    background: url(images/desktop/image-photography.jpg) no-repeat center center/cover;
-    width: 50%;
+#sstr-pic2{
+    background-color: hsl(199, 100%, 69%);
+    color: hsl(199, 58%, 44%);
+    text-align: center;
+    z-index: 2;
 }
+.article-pic{
+    padding: 4rem 0 4rem 0;
+    margin: 0 auto;
+    z-index: 2;
+    margin-top: -13rem;
+    width: 37rem;
+   
+}
+.txt-h1-pic{
+    font-family: 'Frauces';
+}
+.txt-p-pic{
+    font-family: 'Barlow';
+}
+
+
+
+
 /*CLIENT AREA*/
 article{
     width: 100%;
-    height: 70vh;
+    height: 60vh;
 }
 #clt-h1{
     text-align: center;
+    margin-top: 5rem;
+    color: rgba(0, 0, 0, 0.485);
+    font-family: 'Frauces';
+    
 }
 .img-client{
    display: block;
    border-radius: 5rem;
-   width: 20%;
-   margin-left: 6rem;
-   
+   width: 25%;
+   margin: 0 auto;
+  
 }
 .client-spc{
     margin-left: 2rem;
-    width: 30rem;
+    width: 20rem;
     margin-top: 4rem;
+    text-align: center;
+    margin-right: 2rem;
+   transition-duration: 0.3s;
 }
-.client-p{
+
+.client-spc:hover:first-child{
+    border: 0.3rem solid rgba(255, 255, 0, 0.352);
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: 1rem 1rem 5rem rgba(0, 0, 0, 0.179);
+}
+
+.client-spc:hover:nth-child(2){
+    border: 0.3rem solid hsl(169, 45%, 70%);
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: 1rem 1rem 5rem rgba(0, 0, 0, 0.179);
+}
+.client-spc:hover:last-child{
+    border: 0.3rem solid hsla(7, 99%, 70%, 0.582);
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: 1rem 1rem 5rem rgba(0, 0, 0, 0.179);
+}
+.clt-p{
     width: 20rem;
     text-align: center;
+    font-family: 'Barlow';
+    margin: 2rem 0 0 0 ;
    
 }
-.client-h2{
-    margin-top: 4rem;
+.clt-h2{
     text-align: center;
+    margin-top: 2rem;
+    font-family: 'Frauces';
+}
+.clt-p-job{
+    text-align: center; 
+    color: rgba(0, 0, 0, 0.652);
+    margin-top: 0.5rem;
+    font-family: 'Barlow';
 }
 .area-1{
     display: flex;
@@ -144,7 +278,7 @@ article{
 
 
 
-
+/*imgs area before footer*/
 
 .imgs-area{
     display: flex;
@@ -170,18 +304,27 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 3rem;
+    padding-top: 5rem;
 }
 #img-logo{
    width: 10rem;
    margin-bottom: 0.5rem;
    
 }
-.contact-link li{
+.contact-link {
+    margin-bottom: 1rem;
+}
+.contact-link li a{
     color: hsl(168, 45%, 32%);
     margin-left: 1rem;
     font-size: 1.2rem;
-    margin-bottom: 1rem;
+    font-family: 'Frauces';
+   text-decoration: none;
+   transition-duration: 0.3s;
+}
+.contact-link li a:hover{
+    
+  text-decoration: underline;
 }
 
 .social-midias img{
