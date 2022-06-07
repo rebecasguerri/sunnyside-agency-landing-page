@@ -25,8 +25,9 @@ header{
     display: flex;
     flex-direction: row;
     background-color:hsl(200, 100%, 62%) ;
-    justify-content: space-between;
+   justify-content: center ;
     font-family: 'Frauces' ;
+    width: 100%;
   
 }
 #logo-img{
@@ -36,8 +37,7 @@ ul{
     display: flex;
     flex-direction: row;
     padding: 1rem;
-    
-    
+   
     
 }
 .menu-list a {
@@ -68,9 +68,7 @@ ul{
 
 .main-area{
     background: url(images/desktop/image-header.jpg) no-repeat center center/cover;
-    height: 60vh;
-   
- 
+    height: 60vh; 
 }
 #txt-main{
     color: white;
@@ -82,6 +80,37 @@ ul{
     font-family: 'Frauces' ;
     font-weight: 700;
    
+   
+}
+/* mobile menu*/
+.menu-mobile{
+    display: none;
+}
+ .menu-img{
+    display: none;  
+ 
+}
+.mobile-list{
+    display: none;
+}
+.menu-list-mobile {
+    display: flex;
+    flex-direction:column;
+    background-color: white;
+   z-index: 2;
+}
+.menu-list-mobile li {
+   margin-bottom: 1rem;
+   
+   
+}
+.menu-list-mobile li a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.69);
+   
+}
+.menu-list-mobile li a:hover{
+    text-decoration: underline;
    
 }
 
@@ -170,7 +199,6 @@ ul{
 }
 .box-pic img{
     width: 44.4rem;
-
 }
 #sttr-pic1{
     background-color: hsl(169, 45%, 70%);
@@ -330,4 +358,277 @@ footer{
 
 .social-midias img{
     margin-left: 1rem;
+}
+
+@media (max-width: 1024px){
+    /*header*/
+    header{
+        justify-content: space-between;
+        height: 8vh;
+        width: 100vw;
+    }
+    .menu{
+      display:none;
+    }
+    .menu-mobile{
+        display: block;
+      
+    }
+    .menu-img{
+        display: block;
+        cursor: pointer;
+        padding: 1rem;
+    }
+    .mobile-list{
+        display: none;
+    }
+
+
+    .main-area{
+        width: 100vw;
+    }
+    
+     
+   .main-area #txt-main{
+    font-size: 3rem;
+      
+     }
+
+   /*box pics*/
+  .box img{
+    width: 39.5rem;
+    margin-bottom: -0.3rem;
+
+  }
+  #sttr-pic1{
+      width: 31.3rem;
+      height: 12rem;
+  }
+  #sstr-pic2{
+    width: 30rem;
+    height: 12rem;
+  }
+  .txt-box{
+      font-size: 2rem;
+      padding-left: 2rem;
+  }
+  .txt-h1 {
+    font-size: 2rem; 
+    width: 17rem;
+  }
+  .txt-p {
+    font-size: 1rem;
+    width: 17rem;
+  } 
+  .txt-link{
+    font-size: 1rem;
+    width: 17rem;
+   }
+
+   .box-pic img{
+    width: 32.0rem;
+   }
+   .article-pic {
+    padding: 4rem 0 4rem 0;
+    margin: 0 auto;
+    z-index: 2;
+    margin-top: -14rem;
+    width: 20rem;
+}
+  
+    /*client-area*/
+
+    .clt-p{
+        width: 17rem;
+    }
+    .imgs-area{
+        display: none;
+    }
+    /*footer*/
+    .items-footer{
+        margin: 0;
+    }
+  
+}
+ 
+@media (max-width: 768px){
+    header{
+        justify-content: space-between;
+        height: 8vh;
+        width: 100vw;
+    }
+  
+    .box img {
+        width: 26.5rem;
+        margin-bottom: -0.3rem;
+    }
+    .box-pic img {
+        width: 48rem;
+        margin-top: -1rem;
+       
+    }
+   
+    .box-pic{
+        display: block;
+    }
+    #sttr-pic1 {
+        width: 26.0rem;
+        height: 12rem;
+    }
+    #sstr-pic2 {
+        width: 26rem;
+        height: 12rem;
+    }
+    .txt-p-pic{
+        width: 43rem;
+        font-size: 1.3rem;
+    }
+    .txt-h1-pic {
+        width: 43rem;
+    }
+    
+    /*client area*/
+    .clt-p {
+        width: 11rem;
+       
+    }
+    .clt-h2 {
+        text-align: center;
+        margin-top: 1rem;
+        font-family: 'Frauces';
+        font-size: 1.2rem;
+    }
+    .img-client {
+        display: block;
+        border-radius: 5rem;
+        width: 32%;
+        margin: 0 auto;
+    }
+
+
+
+}
+
+@media (max-width: 425px){
+    header{
+        justify-content: space-between;
+        height: 8vh;
+        width: 180%;
+    }
+    .main-area {
+        width: 180vw;
+    }
+    .box img {
+        width: 26.5rem;
+    }
+    #clt-h1 {
+        text-align: center;
+        margin: 5rem -10rem 0 11rem;
+        color: rgba(0, 0, 0, 0.485);
+        font-family: 'Frauces';
+        font-size: 2rem;
+    }
+    .area-1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       
+    }
+    .txt-box {
+        font-size: 2rem;
+        padding-left: 2rem;
+        margin-right: 4rem;
+    }
+    .clt-p {
+        width: 37rem;
+        font-size: 2rem;
+    }
+    .clt-h2 {
+        text-align: center;
+        margin-top: 1rem;
+        font-family: 'Frauces';
+        font-size: 2.2rem;
+    }
+    .clt-p-job {
+        text-align: center;
+        color: rgba(0, 0, 0, 0.652);
+        margin-top: 0.5rem;
+        font-family: 'Barlow';
+        font-size: 1.4rem;
+    }
+    
+    
+    .img-client {
+        display: block;
+        border-radius: 5rem;
+        width: 20%;
+        margin: 0 auto;
+    }
+    .client-spc {
+        margin-left: 2rem;
+        width: 37rem;
+        margin-top: 4rem;
+        text-align: center;
+        transition-duration: 0.3s;
+        margin-left: 23rem;
+    }
+
+    article {
+        width: 100%;
+        height: auto;
+        margin-bottom: 8rem;
+    }
+
+    footer {
+        background-color: hsl(167, 43%, 70%);
+        height: 32vh;
+        width: 179vw;
+    }
+    .contact-link li a {
+        
+        font-size: 1.4rem;
+        
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 350px){
+    header{
+        justify-content: space-between;
+        height: 8vh;
+        width: 190vw;
+    }
+
+.main-area{
+    background: url(images/mobile/image-header.jpg) no-repeat center center/cover;
+    height: 100vh; 
+    width: 190vw;
+}
+
+
 }
