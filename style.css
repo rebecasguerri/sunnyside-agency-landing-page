@@ -16,9 +16,6 @@
 }
 
 
-body{
-    width: 100%;
-}
 
 
 
@@ -27,7 +24,7 @@ header{
     display: flex;
     flex-direction: row;
     background-color:hsl(200, 100%, 62%) ;
-   justify-content: center ;
+    justify-content: center ;
     font-family: 'Frauces' ;
     width: 100%;
   
@@ -35,11 +32,11 @@ header{
 #logo-img{
     padding: 1rem;
 }
-ul{
+.menu ul{
     display: flex;
     flex-direction: row;
     padding: 1rem;
-   
+    font-size: 0.6rem; 
     
 }
 .menu-list a {
@@ -71,6 +68,7 @@ ul{
 .main-area{
     background: url(images/desktop/image-header.jpg) no-repeat center center/cover;
     height: 60vh; 
+    width: 100%;
 }
 #txt-main{
     color: white;
@@ -123,8 +121,9 @@ ul{
     flex-direction: row;
     margin:  auto;
 }
-.box img{
-    width: 44.5rem;
+.box img {
+    width: 100%;
+    height: 100%;
 }
 .txt-box{
     padding: 2rem;
@@ -178,16 +177,16 @@ ul{
 }
 
 
-.txt-h1{
-    font-size: 3rem;
-    width: 25rem;  
+.txt-h1 {
+    font-size: 2.5rem;
+    width: 20rem;
     margin-bottom: 1rem;
-    font-family: 'Frauces' ;
+    font-family: 'Frauces';
     font-weight: 700;
 }
-.txt-p{
-    font-size: 1.4rem;
-    width: 25rem;  
+.txt-p {
+    font-size: 1rem;
+    width: 20rem;
     margin-bottom: 1rem;
     font-family: 'Barlow';
 }
@@ -198,15 +197,17 @@ ul{
     display: flex;
     flex-direction: row;
 }
-.box-pic img{
-    width: 44.4rem;
+.box-pic img {
+    width: 100%;
+    height: 100%;
 }
-#sttr-pic1{
+#sttr-pic1 {
     background-color: hsl(169, 45%, 70%);
     color: hsl(169, 48%, 37%);
     text-align: center;
     z-index: 2;
-   
+    width: 23rem;
+    height: 12rem;
 }
 #sstr-pic2{
     background-color: hsl(199, 100%, 69%);
@@ -214,13 +215,13 @@ ul{
     text-align: center;
     z-index: 2;
 }
-.article-pic{
+.article-pic {
     padding: 4rem 0 4rem 0;
     margin: 0 auto;
     z-index: 2;
     margin-top: -13rem;
-    width: 37rem;
-   
+    width: 27rem;
+    height: 4rem;
 }
 .txt-h1-pic{
     font-family: 'Frauces';
@@ -233,70 +234,72 @@ ul{
 
 
 /*CLIENT AREA*/
-article{
+
+.client-area{
     width: 100%;
-    height: 60vh;
+    height: 70vh;
 }
-#clt-h1{
+#clt-h1 {
     text-align: center;
-    margin-top: 5rem;
+    margin-top: 1rem;
     color: rgba(0, 0, 0, 0.485);
     font-family: 'Frauces';
-    
+    margin: 1rem auto 0;
+    width: 30vw;
 }
-.img-client{
-   display: block;
-   border-radius: 5rem;
-   width: 25%;
-   margin: 0 auto;
+
+.img-client {
+    display: block;
+    border-radius: 5rem;
+    width: 21%;
+    margin: 0 auto;
 }
 
  
-.client-spc{
-    margin-left: 2rem;
-    width: 20rem;
-    margin-top: 4rem;
+.client-spc {
+    width: 32%;
+    margin-top: 2rem;
     text-align: center;
-    margin-right: 2rem;
-   transition-duration: 0.3s;
+    transition-duration: 0.3s;
 }
-
 .client-spc:hover:first-child{
     border: 0.3rem solid rgba(255, 255, 0, 0.352);
     border-radius: 1rem;
-    padding: 1rem;
+    padding: 1rem 0;
     box-shadow: 1rem 1rem 5rem rgba(0, 0, 0, 0.179);
 }
 
 .client-spc:hover:nth-child(2){
     border: 0.3rem solid hsl(169, 45%, 70%);
     border-radius: 1rem;
-    padding: 1rem;
+    padding: 1rem 0;
     box-shadow: 1rem 1rem 5rem rgba(0, 0, 0, 0.179);
 }
 .client-spc:hover:last-child{
     border: 0.3rem solid hsla(7, 99%, 70%, 0.582);
     border-radius: 1rem;
-    padding: 1rem;
+   padding: 1rem 0;
     box-shadow: 1rem 1rem 5rem rgba(0, 0, 0, 0.179);
 }
-.clt-p{
-    width: 20rem;
+.clt-p {
+    width: 83%;
     text-align: center;
     font-family: 'Barlow';
-    margin: 2rem 0 0 0 ;
-   
+    font-size: 0.8rem;
+    margin: 2rem auto 0;
 }
-.clt-h2{
+.clt-h2 {
     text-align: center;
-    margin-top: 2rem;
+    margin-top: 1rem;
     font-family: 'Frauces';
+    font-size: 1rem;
 }
-.clt-p-job{
-    text-align: center; 
+.clt-p-job {
+    text-align: center;
     color: rgba(0, 0, 0, 0.652);
     margin-top: 0.5rem;
     font-family: 'Barlow';
+    font-size: 0.7rem;
 }
 .area-1{
     display: flex;
@@ -327,14 +330,19 @@ article{
 /*footer*/
 footer{
     background-color: hsl(167, 43%, 70%);
-    height: 32vh;
+    height: 30vh;
+    width: 100%;
 }
 .items-footer{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 5rem;
+    padding-top: 2rem;
+}
+.items-footer ul{
+    display: flex;
+    padding: 1.3rem;
 }
 #img-logo{
    width: 10rem;
@@ -342,12 +350,12 @@ footer{
    
 }
 .contact-link {
-    margin-bottom: 1rem;
+    margin-bottom: 0rem;
 }
 .contact-link li a{
     color: hsl(168, 45%, 32%);
     margin-left: 1rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-family: 'Frauces';
    text-decoration: none;
    transition-duration: 0.3s;
@@ -360,418 +368,194 @@ footer{
 .social-midias img{
     margin-left: 1rem;
 }
-
-@media (max-width: 1024px){
-    /*header*/
-    header{
-        justify-content: space-around;
-        height: 8vh;
-        width: 100vw;
-    }
-   
-  .main-area{
-        width: 100vw;
-    }
-    
-     
-   .main-area #txt-main{
-    font-size: 3rem;
-      
-     }
-
-   /*box pics*/
-  .box img{
-    width: 39.5rem;
-    margin-bottom: -0.3rem;
-
-  }
-  #sttr-pic1{
-      width: 31.3rem;
-      height: 12rem;
-  }
-  #sstr-pic2{
-    width: 30rem;
-    height: 12rem;
-  }
-  .txt-box{
-      font-size: 2rem;
-      padding-left: 2rem;
-  }
-  .txt-h1 {
-    font-size: 2rem; 
-    width: 17rem;
-  }
-  .txt-p {
-    font-size: 1rem;
-    width: 17rem;
-  } 
-  .txt-link{
-    font-size: 1rem;
-    width: 17rem;
-   }
-
-   .box-pic img{
-    width: 32.0rem;
-   }
-   .article-pic {
-    padding: 4rem 0 4rem 0;
-    margin: 0 auto;
-    z-index: 2;
-    margin-top: -14rem;
-    width: 20rem;
-}
-  
-    /*client-area*/
-
-    .clt-p{
-        width: 17rem;
-    }
-    .imgs-area{
-        display: none;
-    }
-    /*footer*/
-    .items-footer{
-        margin: 0;
-    }
-  
-}
  
-@media (max-width: 768px){
-    header{
-        justify-content: space-between;
-        height: 8vh;
-        width: 100vw;
+@media (max-width: 1024px){
+    .menu ul {
+        font-size: 0.9rem;
     }
-  
-    .box img {
-        width: 26.5rem;
-        margin-bottom: -0.3rem;
+
+    .client-area {
+        width: 100%;
+        height: 70vh;
     }
-    .box-pic img {
-        width: 48rem;
-        margin-top: -1rem;
-       
-    }
-   
-    .box-pic{
-        display: block;
-    }
-    #sttr-pic1 {
-        width: 26.0rem;
-        height: 12rem;
-    }
-    #sstr-pic2 {
-        width: 26rem;
-        height: 12rem;
-    }
-    .txt-p-pic{
-        width: 43rem;
-        font-size: 1.3rem;
-    }
-    .txt-h1-pic {
-        width: 43rem;
-    }
-    
-    /*client area*/
+
     .clt-p {
-        width: 11rem;
-       
+        font-size: 1rem;
     }
-    .clt-h2 {
-        text-align: center;
-        margin-top: 1rem;
-        font-family: 'Frauces';
-        font-size: 1.2rem;
-    }
-    .img-client {
-        display: block;
-        border-radius: 5rem;
-        width: 32%;
-        margin: 0 auto;
+    .clt-p-job {
+        font-size: 0.8rem;
     }
 
 
-
-}
-
-@media (max-width: 425px){
-    header{
-        justify-content: space-between;
-        height: 8vh;
-        width: 180%;
+    footer {
+        height: 30vh;
+        width: 100%;
     }
-   .menu{
-       display: none;
-   }
-   .menu-img{
-    display:block ;  
-    padding: 1rem;
-    cursor: pointer;
-    
 }
-.mobile-list{
-   display:block;
-   z-index: 3;
-}
-.menu-list-mobile  {
-    display: flex;
-    flex-direction:column;
-    
-}
-
-.menu-list-mobile li a{
-    text-decoration: none;
-    color: rgba(0, 0, 0, 0.69);
-   
-}
-.menu-list-mobile li a:hover{
-    text-decoration: underline;
-   
-}
-
-
-    .main-area {
-        width: 180vw;
+@media (max-width: 768px){
+    #txt-main {
+        font-size: 3rem;
+        top: 5rem;
     }
-    .box img {
-        width: 26.5rem;
-    }
-    #clt-h1 {
-        text-align: center;
-        margin: 5rem -10rem 0 11rem;
-        color: rgba(0, 0, 0, 0.485);
-        font-family: 'Frauces';
+    .txt-h1 {
         font-size: 2rem;
     }
+    .txt-box {
+        padding-right: 1rem;
+        padding-left:3rem ;
+    }
+    #sstr-pic2 {
+        width: 100%;
+    }
+    #sttr-pic1 {
+        width: 100%;
+    }
+    .article-pic {
+        width: 90%;
+    }
+    .clt-p {
+        font-size: 0.8rem;
+    }
+
+
+}
+@media (max-width: 425px){
+    header{
+        width: 100vw; 
+    }
+    .menu ul{
+       display: none;  
+    }
+    .menu-moblie{
+        display: block;
+    }
+    .menu-img{
+        display: block;
+        padding: 1rem;
+    }
+
+    .main-area{
+        background: url(images/mobile/image-header.jpg) no-repeat center center/cover;
+        height: 60vh; 
+        width: 100%;
+    }
+    .box {
+        display: flex;
+        flex-direction: column;  
+    }
+    .txt-h1 {
+        text-align: center;
+    }
+    .txt-p {
+        font-size: 1rem;
+        width: 21rem;
+        text-align: center;
+    }
+    .box-1 a {
+        margin: 0 7rem;
+    }
+    .box-2 a{
+        margin: 0 7rem;
+    }
+
+    .box-2
+    .txt-box{
+        order: -1;
+    }
+
+    .box-pic {
+        display: flex;
+        flex-direction: column;
+    }
+
     .area-1 {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-       
     }
-    .txt-box {
-        font-size: 2rem;
-        padding-left: 2rem;
-        margin-right: 4rem;
+    .client-area {
+        width: 100%;
+        height: 100%;
+    }
+    #clt-h1 {
+        margin: 2rem 0 0 0;
+        font-size: 1.3rem;
+        width: 26rem;
+        
     }
     .clt-p {
-        width: 37rem;
-        font-size: 2rem;
-    }
-    .clt-h2 {
-        text-align: center;
-        margin-top: 1rem;
-        font-family: 'Frauces';
-        font-size: 2.2rem;
-    }
-    .clt-p-job {
-        text-align: center;
-        color: rgba(0, 0, 0, 0.652);
-        margin-top: 0.5rem;
-        font-family: 'Barlow';
-        font-size: 1.4rem;
-    }
-    
-    
-    .img-client {
-        display: block;
-        border-radius: 5rem;
-        width: 20%;
-        margin: 0 auto;
+        font-size: 0.8rem;
+        margin: 1rem auto 0;
     }
     .client-spc {
-        margin-left: 2rem;
-        width: 37rem;
-        margin-top: 4rem;
+        width: 60%;
+        margin-top: 2rem;
         text-align: center;
         transition-duration: 0.3s;
-        margin-left: 23rem;
-    }
-
-    article {
-        width: 100%;
-        height: auto;
-        margin-bottom: 8rem;
-    }
-
-    footer {
-        background-color: hsl(167, 43%, 70%);
-        height: 32vh;
-        width: 179vw;
-    }
-    .contact-link li a {
-        
-        font-size: 1.4rem;
-        
+        margin-bottom: 2rem;
     }
 
 }
 
+
 @media (max-width: 375px){
-    header {
-        justify-content: space-between;
-        height: 8vh;
-        width: 202%;
-    }
-    .box img {
-        width: 202vw;
-    }
-    .txt-h1 {
-        font-size: 3rem;
-        width: 34rem;
-        text-align: center;
-    }
     .txt-p {
-        font-size: 1.5rem;
-        width: 34rem;
-        
+        font-size: 1rem;
+        width: 19rem;
         text-align: center;
     }
     .txt-box {
-        margin: 0 auto;
+        padding-right: 1rem;
+        padding-left: 2rem;
     }
-    .box-1 a {
-        color: rgba(0, 0, 0, 0.557);
-        border-bottom: 0.2rem solid yellow;
-        width: 14rem;
-        text-decoration: none;
-        font-family: 'Frauces';
-        transition-duration: 0.5s;
-        font-size: 2rem;
-        margin-left: 10rem;
-    }
-    .box-2 a {
-        margin-left: 10rem;
-        width: 14rem;
-        font-size: 2rem;
-    }
-    
-    .main-area {
-        width: 202vw;
-    }
-    .box {
-        display: flex;
-        flex-direction: column;
-        margin: auto;
-    }
-    footer {
-        width: 202%;
-    }
-    .article-pic {
-        padding: 0rem 0 4rem 0;
-        margin: 0 auto;
-        z-index: 2;
-        margin-top: -26rem;
-        width: 21rem; 
-        font-size: 2rem;
-
+    .clt-p {
+        font-size: 0.9rem;
+        margin: 1rem auto 0;
     }
     #clt-h1 {
-        text-align: center;
-        margin: 16rem -12rem 0 11rem;
-        color: rgba(0, 0, 0, 0.485);
-        font-family: 'Frauces';
-        font-size: 2rem;
+        margin: 2rem 0 0 0;
+        font-size: 1.3rem;
+        width: 23rem;
     }
     .box-pic img {
-        width: 47.5rem;
-        margin-top: 4rem;
-    }
-
-
-
-    .contact-link li a {
-        font-size: 1.7rem;
+        width: 100%;
+        height: 100%;
+        margin-top: -0.3rem;
     }
 }
 @media (max-width: 320px){
-    header {
-        justify-content: space-between;
-        height: 8vh;
-        width: 237vw;
-    }
-    .box img {
-        width: 202vw;
-    }
     .txt-h1 {
-        font-size: 3rem;
-        width: 34rem;
-        text-align: center;
+        font-size: 2rem;
+        width: 17rem;
+        margin-bottom: 1rem;
+        font-family: 'Frauces';
+        font-weight: 700;
     }
     .txt-p {
-        font-size: 1.5rem;
-        width: 34rem;
-        
+        font-size: 1rem;
+        width: 16rem;
         text-align: center;
-    }
-    .txt-box {
-        margin: 0 auto;
     }
     .box-1 a {
-        color: rgba(0, 0, 0, 0.557);
-        border-bottom: 0.2rem solid yellow;
-        width: 14rem;
-        text-decoration: none;
-        font-family: 'Frauces';
-        transition-duration: 0.5s;
-        font-size: 2rem;
-        margin-left: 10rem;
+        margin: 0 5rem;
     }
     .box-2 a {
-        margin-left: 10rem;
-        width: 14rem;
-        font-size: 2rem;
-    }
-    
-    .main-area {
-        height: 119vh;
-        width: 237vw;
-    }
-    .box {
-        display: flex;
-        flex-direction: column;
-        margin: auto;
-    }
-    footer {
-        width: 202%;
-    }
-    .article-pic {
-        padding: 0rem 0 4rem 0;
-        margin: 0 auto;
-        z-index: 2;
-        margin-top: -26rem;
-        width: 21rem; 
-        font-size: 2rem;
-
+        margin: 0 5rem;
     }
     #clt-h1 {
+        margin: 2rem 0 0 0;
+        font-size: 1.3rem;
+        width: 19rem;
+    }
+    .client-spc {
+        width: 60%;
+        margin-top: 2rem;
         text-align: center;
-        margin: 16rem -12rem 0 11rem;
-        color: rgba(0, 0, 0, 0.485);
-        font-family: 'Frauces';
-        font-size: 2rem;
-    }
-    .box-pic img {
-        width: 47.5rem;
-        margin-top: 4rem;
-    }
-
-    .contact-link li a {
-        font-size: 1.7rem;
+        transition-duration: 0.3s;
+        margin-bottom: 2rem;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 
