@@ -16,7 +16,9 @@
 }
 
 
-
+body{
+    width: 100%;
+}
 
 
 
@@ -590,6 +592,94 @@ footer{
         font-size: 1.4rem;
         
     }
+
+}
+
+@media (max-width: 375px){
+    header {
+        justify-content: space-between;
+        height: 8vh;
+        width: 202%;
+    }
+    .box img {
+        width: 202vw;
+    }
+    .txt-h1 {
+        font-size: 3rem;
+        width: 34rem;
+        text-align: center;
+    }
+    .txt-p {
+        font-size: 1.5rem;
+        width: 34rem;
+        
+        text-align: center;
+    }
+    .txt-box {
+        margin: 0 auto;
+    }
+    .box-1 a {
+        color: rgba(0, 0, 0, 0.557);
+        border-bottom: 0.2rem solid yellow;
+        width: 14rem;
+        text-decoration: none;
+        font-family: 'Frauces';
+        transition-duration: 0.5s;
+        font-size: 2rem;
+        margin-left: 10rem;
+    }
+    .box-2 a {
+        margin-left: 10rem;
+        width: 14rem;
+        font-size: 2rem;
+    }
+    
+    .main-area {
+        width: 202vw;
+    }
+    .box {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+    footer {
+        width: 202%;
+    }
+    .article-pic {
+        padding: 0rem 0 4rem 0;
+        margin: 0 auto;
+        z-index: 2;
+        margin-top: -26rem;
+        width: 21rem; 
+        font-size: 2rem;
+
+    }
+    #clt-h1 {
+        text-align: center;
+        margin: 16rem -12rem 0 11rem;
+        color: rgba(0, 0, 0, 0.485);
+        font-family: 'Frauces';
+        font-size: 2rem;
+    }
+    .box-pic img {
+        width: 47.5rem;
+        margin-top: 4rem;
+    }
+
+
+
+    .contact-link li a {
+        font-size: 1.7rem;
+    }
+}
+@media (max-width: 320px){
+    .main-area {
+        width: 238vw;
+    }
+
+
+
+
 
 }
 
