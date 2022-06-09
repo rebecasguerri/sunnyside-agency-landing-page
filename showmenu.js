@@ -1,11 +1,12 @@
-const clickMenu =document.getElementById("menu");
-const showMenu = document.querySelector(".mobile-list");
+const menu =document.querySelector(".menu-img");
+const showMenu = document.querySelector("#menu-list");
 
-clickMenu.addEventListener("click", () =>{
+menu.addEventListener('click', show);
 
+ function show(){
     if(showMenu.style.display === "none"){
-        showMenu.style.display ="none";
+        showMenu.style.display ="flex";
     }else{
-        showMenu.style.display ="block";
+        showMenu.style.display ="flex";
     }
-});
+};
