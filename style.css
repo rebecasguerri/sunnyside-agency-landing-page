@@ -24,9 +24,9 @@ header{
     display: flex;
     flex-direction: row;
     background-color:hsl(200, 100%, 62%) ;
-    justify-content: center ;
+    justify-content: space-between;
     font-family: 'Frauces' ;
-    width: 100%;
+   
   
 }
 #logo-img{
@@ -36,13 +36,26 @@ header{
     display: flex;
     flex-direction: row;
     padding: 1rem;
-    font-size: 0.6rem; 
-    
+    font-size: 0.6rem;    
+}
+.hamburguer{
+    display: none;
+    cursor: pointer;
+}
+.bar{
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 2px;
+    margin: 5px auto;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
 }
 .menu-list a {
     margin-left: 1rem;
     color: white;
     text-decoration: none;
+    font-size: 1.1rem;
     
 }
 .menu-list li a:hover {
@@ -79,13 +92,12 @@ header{
     font-size: 4rem;
     font-family: 'Frauces' ;
     font-weight: 700;
-   
-   
+  
 }
 /* mobile menu*/
 
- .menu-img{
-    display: none;  
+.menu-mobile{
+    display: none;
 }
 #menu-list{
     display: none;
@@ -96,7 +108,7 @@ header{
     box-shadow: 1px 1px 25px #00000075;
     border-radius: 1rem;
     margin: 3rem;
-    
+    display: none;
 }
 
 .menu-list-mobile li {
@@ -421,9 +433,39 @@ footer{
 @media (max-width: 425px){
     header{
         width: 100vw; 
+        display: flex;
+        justify-content: space-between;
+    
+    }
+    .hamburguer{
+        display: block;
+    }
+    .hamburguer.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburguer.active .bar:nth-child(1){
+     transform: translateY(8px) rotate(45deg);
+     }
+     .hamburguer.active .bar:nth-child(3){
+         transform: translateY(-8px) rotate(-45deg);
+     }
+     .nav-menu{
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        border-radius: 0 0 20px 20px;
+        background-color: #101026;
+        text-align: center;
+        flex-direction: column;
+        width: 100%;
+        transition: 0.3s;
     }
     .menu ul{
        display: none;  
+    }
+    .menu-mobile{
+        display: block;
     }
     .menu-img{
         display: block; 
@@ -432,6 +474,7 @@ footer{
     #menu-list{
         display: flex;
         z-index: 3;
+        display: none;
     }
     .main-area{
         background: url(images/mobile/image-header.jpg) no-repeat center center/cover;
