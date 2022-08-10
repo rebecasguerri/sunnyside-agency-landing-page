@@ -439,6 +439,7 @@ footer{
     }
     .hamburguer{
         display: block;
+        padding: 1rem;
     }
     .hamburguer.active .bar:nth-child(2){
         opacity: 0;
